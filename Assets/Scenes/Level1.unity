@@ -244,7 +244,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -5253,6 +5253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadDelay: 1
+  finishEffect: {fileID: 189332400}
 --- !u!61 &1122681547
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5310,7 +5311,7 @@ GameObject:
   - component: {fileID: 1156247960}
   - component: {fileID: 1156247959}
   m_Layer: 0
-  m_Name: Finish Effect (1)
+  m_Name: Bleeding Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5372,7 +5373,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -5411,7 +5412,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1156247957}
   serializedVersion: 8
-  lengthInSec: 0.2
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -5420,7 +5421,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -5485,7 +5486,7 @@ ParticleSystem:
     enabled: 1
     startLifetime:
       serializedVersion: 2
-      minMaxState: 3
+      minMaxState: 0
       scalar: 2
       minScalar: 0.5
       maxCurve:
@@ -5539,7 +5540,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.98
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -6031,7 +6032,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 18
+    type: 2
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -6237,7 +6238,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 10
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -6290,7 +6291,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 10
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -11325,7 +11326,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d93188da90dea4748a3f4d67274fb1b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadDelay: 0.5
+  loadDelay: 1
+  finishEffect: {fileID: 1156247960}
 --- !u!1 &2062606143
 GameObject:
   m_ObjectHideFlags: 0
