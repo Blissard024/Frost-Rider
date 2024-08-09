@@ -1230,6 +1230,7 @@ GameObject:
   - component: {fileID: 1754008642}
   - component: {fileID: 1754008646}
   - component: {fileID: 1754008647}
+  - component: {fileID: 1754008648}
   m_Layer: 0
   m_Name: Ash (Player)
   m_TagString: Untagged
@@ -1307,3 +1308,16 @@ CircleCollider2D:
   m_Offset: {x: 0.54, y: 0.5}
   serializedVersion: 2
   m_Radius: 0.32
+--- !u!114 &1754008648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754008641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e8888c463c2ad4984145b4b8cbc9c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torchAmount: 1
