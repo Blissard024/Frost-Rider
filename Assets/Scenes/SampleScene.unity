@@ -570,7 +570,7 @@ GameObject:
   - component: {fileID: 1238798085}
   m_Layer: 0
   m_Name: Level Sprite Shape
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1595,6 +1595,7 @@ GameObject:
   - component: {fileID: 1754008646}
   - component: {fileID: 1754008647}
   - component: {fileID: 1754008648}
+  - component: {fileID: 1754008649}
   m_Layer: 0
   m_Name: Ash (Player)
   m_TagString: Player
@@ -1685,6 +1686,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   torqueAmount: 1
+--- !u!114 &1754008649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754008641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d93188da90dea4748a3f4d67274fb1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2062606143
 GameObject:
   m_ObjectHideFlags: 0
