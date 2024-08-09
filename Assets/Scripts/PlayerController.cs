@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb2d;
-    [SerializeField] float torchAmount = 1;
+    [SerializeField] float torqueAmount = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +17,12 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.LeftArrow))
         {
-            rb2d.AddTorque(torchAmount);
+            rb2d.AddTorque(torqueAmount);
         }
 
         if(Input.GetKey(KeyCode.RightArrow))
         {
-            rb2d.AddTorque(-torchAmount);
+            rb2d.AddTorque(-torqueAmount);
         }
     }
 }
